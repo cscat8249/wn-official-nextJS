@@ -18,7 +18,7 @@ const Navbar = () => {
           <li className={styles.listitem}>
             <Link href="/">
               <a>
-                브랜드
+                브랜드s
                 <span></span>
               </a>
             </Link>

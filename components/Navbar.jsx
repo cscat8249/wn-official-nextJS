@@ -5,7 +5,7 @@ import styles from '../styles/Navbar.module.scss'
 
 const Navbar = () => {
   const [ open, setOpen ] = useState(false);
-
+  
   return (
     <div className={styles.container}>
       <Link href="/">

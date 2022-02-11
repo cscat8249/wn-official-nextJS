@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react'
 import styles from '../styles/Navbar.module.scss'
 
 const Navbar = () => {
   const [ open, setOpen ] = useState(false);
+  
   return (
     <div className={styles.container}>
       <Link href="/">
@@ -15,7 +16,7 @@ const Navbar = () => {
       <div className={styles.navigation} id='navigation'>
         <ul className={styles.list}>
           <li className={styles.listitem}>
-            <Link href="/#brand_section">
+            <Link href="/">
               <a>
                 브랜드
                 <span></span>
@@ -23,7 +24,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.listitem}>
-            <Link href="/#menu_section">
+            <Link href="/">
               <a>
                 MENU
                 <span></span>
@@ -31,7 +32,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.listitem}>
-            <Link href="/#serviceinfo_section">
+            <Link href="/">
               <a>
                 광고/기술
                 <span></span>
@@ -39,7 +40,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.listitem}>
-            <Link href="/#storeinfo_section">
+            <Link href="/">
               <a>
                 매장 안내
                 <span></span>
@@ -47,7 +48,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.listitem}>
-            <Link href="/#stroy_section">
+            <Link href="/">
               <a>
                 STORY
                 <span></span>
@@ -55,7 +56,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.listitem}>
-            <Link href="/#foundedcost_section">
+            <Link href="/">
               <a>
                 창업비용
                 <span></span>
@@ -64,7 +65,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className={styles.question_link_wrap}>
-         <Link href="/#affiliateinquiry_section">
+         <Link href="/">
           가맹문의
          </Link>
         </div>
@@ -77,37 +78,37 @@ const Navbar = () => {
       
       <ul onClick={ ()=> setOpen(false) } className={styles.menu} style={{right: open ? "0px": "-50vw"}}>
         <li className={styles.menuItem}>
-          <Link href="/#brand_section">
+          <Link href="/">
             브랜드
           </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/#menu_section">
+          <Link href="/">
             MENU
           </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/#serviceinfo_section">
+          <Link href="/">
             광고/기술
           </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/#storeinfo_section">
+          <Link href="/">
             매장 안내
           </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/#stroy_section">
+          <Link href="/">
             STORY
           </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/#foundedcost_section">
+          <Link href="/">
             창업비용
           </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/#affiliateinquiry_section">
+          <Link href="/">
             가맹문의
           </Link>
         </li>

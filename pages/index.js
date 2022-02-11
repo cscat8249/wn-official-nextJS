@@ -17,15 +17,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon"/>
         <link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon"/>
       </Head>
-      <section id='visual_section'></section>
-      <section id='brand_section'></section>
-      <section id='menu_section'></section>
-      <section id='serviceinfo_section'></section>
-      <section id='storeinfo_section'></section>
-      <section id='stroy_section'></section>
-      <section id='foundedcost_section'></section>
-      <section id='affiliateinquiry_section'></section>
+      
       <h1 className={styles.title}>this is Hompage</h1> 
+      
     </div>
   )
 }

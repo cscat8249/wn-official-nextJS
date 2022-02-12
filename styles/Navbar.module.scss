@@ -13,6 +13,7 @@
     font-size: 18px;
     position: sticky;
     top: 0;
+    z-index: 999;
     .navigation {
         display: flex;
         flex-direction: row;
@@ -63,18 +64,6 @@
         }
     }
 }
-.active {
-    color: #fdbd3a;
-    font-weight: 700;
-    span {
-        transform: scale(1, 1);
-        transition: 0.5s all ease;
-        display: block;
-        width: 100%;
-        background-color: #fdbd3a;
-    }
-}
-
 
 .hamburger {
     display: none;

@@ -78,37 +78,37 @@ const Navbar = () => {
       
       <ul onClick={ ()=> setOpen(false) } className={styles.menu} style={{right: open ? "0px": "-50vw"}}>
         <li className={styles.menuItem}>
-          <Link href="/">
+          <Link href="/#brand_section">
             브랜드
           </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/">
+          <Link href="/#menu_section">
             MENU
           </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/">
+          <Link href="/#serviceinfo_section">
             광고/기술
           </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/">
+          <Link href="/#storeinfo_section">
             매장 안내
           </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/">
+          <Link href="/#stroy_section">
             STORY
           </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/">
+          <Link href="/#foundedcost_section">
             창업비용
           </Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/">
+          <Link href="/#affiliateinquiry_section">
             가맹문의
           </Link>
         </li>

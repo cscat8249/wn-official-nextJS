@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -17,4 +18,21 @@ a {
 
 h1 {
   color: red;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+.active {
+  color: #fdbd3a !important;
+  font-weight: 700 !important;
+}
+.active span {
+  transform: scale(1, 1) !important;
+  transition: 0.5s all ease !important;
+  display: block !important;
+  width: 100% !important;
+  background-color: #fdbd3a !important;
 }

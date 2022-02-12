@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className={styles.navigation} id='navigation'>
         <ul className={styles.list}>
           <li className={styles.listitem}>
-            <Link href="/">
+            <Link href="/#brand_section">
               <a>
                 브랜드
                 <span></span>
@@ -24,7 +24,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.listitem}>
-            <Link href="/">
+            <Link href="/#menu_section">
               <a>
                 MENU
                 <span></span>
@@ -32,7 +32,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.listitem}>
-            <Link href="/">
+            <Link href="/#serviceinfo_section">
               <a>
                 광고/기술
                 <span></span>
@@ -40,7 +40,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.listitem}>
-            <Link href="/">
+            <Link href="/#storeinfo_section">
               <a>
                 매장 안내
                 <span></span>
@@ -48,7 +48,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.listitem}>
-            <Link href="/">
+            <Link href="/#stroy_section">
               <a>
                 STORY
                 <span></span>
@@ -56,7 +56,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.listitem}>
-            <Link href="/">
+            <Link href="/#foundedcost_section">
               <a>
                 창업비용
                 <span></span>
@@ -65,7 +65,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className={styles.question_link_wrap}>
-         <Link href="/">
+         <Link href="/#affiliateinquiry_section">
           가맹문의
          </Link>
         </div>

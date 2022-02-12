@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.scss'
 import Script from 'next/script'
+import Affiliateinquiry from '../components/Affiliateinquiry'
 
 export default function Home() {
   return (
@@ -91,7 +92,10 @@ export default function Home() {
       <section id='storeinfo_section'></section>
       <section id='stroy_section'></section>
       <section id='foundedcost_section'></section>
-      <section id='affiliateinquiry_section'></section>
+      <section id='affiliateinquiry_section' className={styles.affiliateinquiry_section}>
+        <Affiliateinquiry>
+        </Affiliateinquiry>
+      </section>
       {/* <h1 className={styles.title}>this is Hompage</h1>  */}
       
     </div>

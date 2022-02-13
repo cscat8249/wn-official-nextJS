@@ -12,27 +12,27 @@ const Affiliateinquiry = () => {
             <div className={styles.affiliateinquiry_text_one}>
                 <div className={styles.name_wrap}>
                     <p className={styles.title}>이름</p>
-                    <input type="text" name="name" placeholder="이름을 입력하세요" value=""/>
+                    <input className={styles.name} type="text" name="name" placeholder="이름을 입력하세요" value=""/>
                 </div>
                 <div className={styles.tel_wrap}>
                     <p className={styles.title}>연락처</p>
-                    <input type="text" value="" name="telnumber1"/>
-                    <input type="text" value="" name="telnumber2"/>
-                    <input type="text" value="" name="telnumber3"/>
+                    <input className={styles.tel} type="text" value="" name="telnumber1"/>
+                    <input className={styles.tel} type="text" value="" name="telnumber2"/>
+                    <input className={styles.tel} type="text" value="" name="telnumber3"/>
                 </div>
                 <div className={styles.hopearea_wrap}>
                     <p className={styles.title}>희망개설지역</p>
-                    <input type="text" placeholder="창업희망 지역을 입력하세요."/>
+                    <input className={styles.hopearea} type="text" placeholder="창업희망 지역을 입력하세요."/>
                 </div>
                 <div className={styles.estimate_wrap}>
                     <p className={styles.title}>창업 예상 견적</p>
-                    <input type="text" placeholder="창업예상 비용을 입력하세요."/>
+                    <input className={styles.estimate} type="text" placeholder="창업예상 비용을 입력하세요."/>
                 </div>
             </div>
             <div className={styles.affiliateinquiry_text_two}>
                 <div className={styles.question_wrap}>
                     <p className={styles.title}>기타문의내용</p>
-                    <textarea name="etc" id="etc" cols="30" rows="10"></textarea>
+                    <textarea className={styles.question}  name="etc" id="etc" cols="30" rows="10"></textarea>
                 </div>
                 <div className={styles.checkbox_btn_wrap}>
                     <div className={styles.chekbox_wrap}>

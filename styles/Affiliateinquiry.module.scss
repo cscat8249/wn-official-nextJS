@@ -16,7 +16,7 @@
         .title {
             font-size: 30px;
             font-weight: 700;
-            margin-bottom: 2%;
+            margin-bottom: 6%;
         }
         .desc {
             font-size: 18px;
@@ -187,6 +187,12 @@
 
 @include mobile {
     .affiliateinquiry_wrap {
+        .affiliateinquiry_title_wrap {
+            .desc {
+                width: 80%;
+                line-height: 1.4;
+            }
+        }
         .form {
             width: 80%;
             height: 100%;

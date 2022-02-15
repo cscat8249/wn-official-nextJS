@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.scss'
 import Script from 'next/script'
 import Affiliateinquiry from '../components/Affiliateinquiry'
+import Foundedcost from '../components/Foundedcost'
 
 export default function Home() {
   return (
@@ -91,7 +92,10 @@ export default function Home() {
       <section id='serviceinfo_section'></section>
       <section id='storeinfo_section'></section>
       <section id='stroy_section'></section>
-      <section id='foundedcost_section'></section>
+      <section id='foundedcost_section'>
+        <Foundedcost>
+        </Foundedcost>
+      </section>
       <section id='affiliateinquiry_section' className={styles.affiliateinquiry_section}>
         <Affiliateinquiry>
         </Affiliateinquiry>

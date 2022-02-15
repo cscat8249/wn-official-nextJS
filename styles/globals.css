@@ -15,10 +15,10 @@ a {
 * {
   box-sizing: border-box;
 }
-section {
+/* section {
   width: 100%;
   height: 100vh;
-}
+} */
 
 .active {
   color: #fdbd3a !important;

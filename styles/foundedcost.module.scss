@@ -1,0 +1,22 @@
+@charset 'utf-8';
+
+.foundedcost_section {
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .cooperation_wrap {
+        padding-top: 6%;
+    }
+    .cost_wrap {
+        padding-top: 6%;
+    }
+    .cost_info_wrap {
+        padding-top: 6%;
+    }
+    img {
+        display: block;
+        width: 100%;
+    }
+}

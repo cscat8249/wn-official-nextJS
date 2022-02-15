@@ -5,8 +5,8 @@ const Affiliateinquiry = () => {
   return (
     <div className={styles.affiliateinquiry_wrap}>
         <div className={styles.affiliateinquiry_title_wrap}>
-            <h1 className={styles.title}>가맹문의</h1>
-            <p className={styles.desc}>성공적인 창업을 위한 첫걸음</p>
+            <h1 className={styles.title}>고객센터</h1>
+            <p className={styles.desc}>프리미엄 유통 전문점 우리집놀러와, 성공적인 창업을 위한 첫 걸음</p>
         </div>
         <form className={styles.form}>
             <div className={styles.affiliateinquiry_text_one}>
@@ -22,17 +22,19 @@ const Affiliateinquiry = () => {
                 </div>
                 <div className={styles.hopearea_wrap}>
                     <p className={styles.title}>희망개설지역</p>
-                    <input className={styles.hopearea} type="text" placeholder="창업희망 지역을 입력하세요."/>
+                    <input className={styles.hopearea} type="text" placeholder="가게 오픈 희망 지역은 어디세요?"/>
                 </div>
                 <div className={styles.estimate_wrap}>
                     <p className={styles.title}>창업 예상 견적</p>
-                    <input className={styles.estimate} type="text" placeholder="창업예상 비용을 입력하세요."/>
+                    <input className={styles.estimate} type="text" placeholder="창업 예산을 알려주시면 좋아요.(부동산임대비 포함)"/>
                 </div>
             </div>
             <div className={styles.affiliateinquiry_text_two}>
                 <div className={styles.question_wrap}>
                     <p className={styles.title}>기타문의내용</p>
-                    <textarea className={styles.question}  name="etc" id="etc" cols="30" rows="10"></textarea>
+                    <textarea className={styles.question}  name="etc" id="etc" cols="30" rows="10" placeholder='기타 문의내용을 자유롭게 적어주세요.'>
+
+                    </textarea>
                 </div>
                 <div className={styles.checkbox_btn_wrap}>
                     <div className={styles.chekbox_wrap}>

@@ -34,7 +34,7 @@ const Navbar = () => {
           <li className={styles.listitem}>
             <Link href="/#serviceinfo_section">
               <a>
-                광고/기술
+                광고·기술
                 <span></span>
               </a>
             </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
           <li className={styles.listitem}>
             <Link href="/#storeinfo_section">
               <a>
-                매장 안내
+                체험매장
                 <span></span>
               </a>
             </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
           <li className={styles.listitem}>
             <Link href="/#foundedcost_section">
               <a>
-                창업비용
+                창업비
                 <span></span>
               </a>
             </Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
         </ul>
         <div className={styles.question_link_wrap}>
          <Link href="/#affiliateinquiry_section">
-          가맹문의
+          고객센터
          </Link>
         </div>
         <div className={styles.hamburger} onClick={(() => setOpen(!open))}>
@@ -89,12 +89,12 @@ const Navbar = () => {
         </li>
         <li className={styles.menuItem}>
           <Link href="/#serviceinfo_section">
-            광고/기술
+            광고·기술
           </Link>
         </li>
         <li className={styles.menuItem}>
           <Link href="/#storeinfo_section">
-            매장 안내
+            체험매장
           </Link>
         </li>
         <li className={styles.menuItem}>
@@ -104,12 +104,12 @@ const Navbar = () => {
         </li>
         <li className={styles.menuItem}>
           <Link href="/#foundedcost_section">
-            창업비용
+            창업비
           </Link>
         </li>
         <li className={styles.menuItem}>
           <Link href="/#affiliateinquiry_section">
-            가맹문의
+            고객센터
           </Link>
         </li>
       </ul>

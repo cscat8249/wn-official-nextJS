@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.scss'
 import Script from 'next/script'
 import Affiliateinquiry from '../components/Affiliateinquiry'
 import Foundedcost from '../components/Foundedcost'
+import Serviceinfo from '../components/Serviceinfo'
 
 export default function Home() {
   return (
@@ -89,7 +90,10 @@ export default function Home() {
         </div>
       </section>
       <section id='menu_section'></section>
-      <section id='serviceinfo_section'></section>
+      <section id='serviceinfo_section'>
+        <Serviceinfo>
+        </Serviceinfo>
+      </section>
       <section id='storeinfo_section'></section>
       <section id='stroy_section'></section>
       <section id='foundedcost_section'>

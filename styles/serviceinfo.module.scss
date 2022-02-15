@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+.serviceinfo_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 4%;
+    img {
+        display: block;
+        width: 100%;
+    }
+    .advertisement_wrap {
+        margin-top: 2%;
+    }
+    .technology_wrap {
+        margin-top: 4%;
+    }
+}

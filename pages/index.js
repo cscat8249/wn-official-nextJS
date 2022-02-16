@@ -7,6 +7,7 @@ import Script from 'next/script'
 import Affiliateinquiry from '../components/Affiliateinquiry'
 import Foundedcost from '../components/Foundedcost'
 import Serviceinfo from '../components/Serviceinfo'
+import Brand from '../components/Brand'
 
 export default function Home() {
   return (
@@ -82,30 +83,20 @@ export default function Home() {
         <Image className={styles.img} src="/img/content/visual_01.png" width={1920} height={710} alt='우리집 놀러와 비주얼'></Image>
       </section>
       <section className={styles.brand_section} id='brand_section'>
-        <div className={styles.brand_wrap_info}>
-          <Image className={styles.img} src="/img/content/brand_01_01.png" width={1920} height={650} alt='우리집 놀러와 브랜드'></Image>
-        </div>
-        <div className={styles.brand_wrap_3go}>
-          <Image className={styles.img} src="/img/content/brand_02_02.png" width={1920} height={650} alt='우리집 놀러와 3GO'></Image>
-        </div>
+        <Brand/>
       </section>
       <section id='menu_section'></section>
       <section id='serviceinfo_section'>
-        <Serviceinfo>
-        </Serviceinfo>
+        <Serviceinfo/>
       </section>
       <section id='storeinfo_section'></section>
       <section id='stroy_section'></section>
       <section id='foundedcost_section'>
-        <Foundedcost>
-        </Foundedcost>
+        <Foundedcost/>
       </section>
-      <section id='affiliateinquiry_section' className={styles.affiliateinquiry_section}>
-        <Affiliateinquiry>
-        </Affiliateinquiry>
+      <section id='affiliateinquiry_section'>
+        <Affiliateinquiry/>
       </section>
-      {/* <h1 className={styles.title}>this is Hompage</h1>  */}
-      
     </div>
   )
 }

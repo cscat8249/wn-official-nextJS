@@ -1,25 +1,22 @@
 @charset 'utf-8';
-@import './mixin';
 
-.visual_section {
+.brand_section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4%;
+    margin-top: 1%;
     width: 100%;
     height: auto;
     .img {
         display: block;
         width: 100%;
     }
+    .brand_wrap_info {
+        margin-top: 4%;
+    }
+    .brand_wrap_3go {
+        margin-top: 4%;
+    }
+
 }
-
-
-@include tablet {
-
-}
-
-@include mobile {
-    
-}
-

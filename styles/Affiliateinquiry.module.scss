@@ -1,170 +1,182 @@
 @charset 'utf-8';
 @import './mixin';
 
-.affiliateinquiry_wrap {
+.affiliateinquiry_section {
+    padding-top: 3%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    .affiliateinquiry_title_wrap {
+    width: 100%;
+    // height: auto;
+    background-image: url('../public/img/bg/bg_left.png'), url('../public/img/bg/bg_right.png');
+    background-size:30% 40%, 30% 40%;
+    background-position:100% 12% ,0px 100%;
+    background-repeat:no-repeat;
+    height: 90vh;
+    .affiliateinquiry_wrap {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        margin-bottom: 5%;
-        .title {
-            font-size: 30px;
-            font-weight: 700;
-            margin-bottom: 6%;
-        }
-        .desc {
-            font-size: 18px;
-            text-align: center;
-        }
-    }
-    .form {
-        width: 70%;
-        height: 80%;
-        padding: 30px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: #fef5f0;
-        .affiliateinquiry_text_one {
-            flex: 1;
+        overflow: hidden;
+        position: relative;
+        .affiliateinquiry_title_wrap {
             display: flex;
             flex-direction: column;
-            .name_wrap {
-                margin-top: 5%;
-                .title {
-                    margin-bottom: 5px;
-                }
-                .name {
-                    width: 40%;
-                    height: 40px;
-                    padding: 0 10px;
-                }
+            align-items: center;
+            margin-bottom: 5%;
+            .title {
+                font-size: 30px;
+                font-weight: 700;
+                margin-bottom: 6%;
             }
-            .tel_wrap {
-                margin-top: 3%;
-                .title {
-                    margin-bottom: 5px;
-                }
-                .tel {
-                    width: 20%;
-                    height: 40px;
-                    padding: 0 10px;
-                    margin-right: 5px;
-                }
-            }
-            .hopearea_wrap {
-                margin-top: 3%;
-                .title {
-                    margin-bottom: 5px;
-                }
-                .hopearea {
-                    width: 70%;
-                    height: 40px;
-                    padding: 0 10px;
-                }
-            }
-            .estimate_wrap {
-                margin-top: 3%;
-                .title {
-                    margin-bottom: 5px;
-                }
-                .estimate {
-                    width: 70%;
-                    height: 40px;
-                    padding: 0 10px;
-                }
+            .desc {
+                font-size: 18px;
+                text-align: center;
             }
         }
-        .affiliateinquiry_text_two {
-            flex: 1;
+        .form {
+            width: 70%;
+            height: 80%;
+            padding: 30px;
             display: flex;
-            flex-direction: column;
-            .question_wrap {
-                margin-top: 3%;
-                .title {
-                    margin-bottom: 10px;
-                }
-                .question {
-                    width: 100%;
-                    height: 280px;
-                    border: none;
-                    resize: none;
-                }
-            }
-            .checkbox_btn_wrap {
-                margin-top: 2%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: #fef5f0;
+            .affiliateinquiry_text_one {
+                flex: 1;
                 display: flex;
-                justify-content: space-between;
-                .container {
-                    display: block;
-                    position: relative;
-                    padding-left: 35px;
-                    margin-bottom: 12px;
-                    cursor: pointer;
-                    font-size: 18px;
-                }  
-                /* Hide the browser's default checkbox */
-                .container input {
-                    position: absolute;
-                    opacity: 0;
-                    cursor: pointer;
-                    height: 0;
-                    width: 0;
-                }  
-                /* Create a custom checkbox */
-                .checkmark {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 25px;
-                    width: 25px;
-                    background-color: #eee;
-                }  
-                /* On mouse-over, add a grey background color */
-                .container:hover input ~ .checkmark {
-                    background-color: #ccc;
+                flex-direction: column;
+                .name_wrap {
+                    margin-top: 5%;
+                    .title {
+                        margin-bottom: 5px;
+                    }
+                    .name {
+                        width: 40%;
+                        height: 40px;
+                        padding: 0 10px;
+                    }
                 }
-                /* When the checkbox is checked, add a "red" background */
-                .container input:checked ~ .checkmark {
-                    background-color: #fdb53d;
+                .tel_wrap {
+                    margin-top: 3%;
+                    .title {
+                        margin-bottom: 5px;
+                    }
+                    .tel {
+                        width: 20%;
+                        height: 40px;
+                        padding: 0 10px;
+                        margin-right: 5px;
+                    }
                 }
-                /* Create the checkmark/indicator (hidden when not checked) */
-                .checkmark:after {
-                    content: "";
-                    position: absolute;
-                    display: none;
-                }  
-                /* Show the checkmark when checked */
-                .container input:checked ~ .checkmark:after {
-                    display: block;
+                .hopearea_wrap {
+                    margin-top: 3%;
+                    .title {
+                        margin-bottom: 5px;
+                    }
+                    .hopearea {
+                        width: 70%;
+                        height: 40px;
+                        padding: 0 10px;
+                    }
                 }
-                /* Style the checkmark/indicator */
-                .container .checkmark:after {
-                    left: 9px;
-                    top: 5px;
-                    width: 5px;
-                    height: 10px;
-                    border: solid white;
-                    border-width: 0 3px 3px 0;
-                    transform: rotate(45deg);
+                .estimate_wrap {
+                    margin-top: 3%;
+                    .title {
+                        margin-bottom: 5px;
+                    }
+                    .estimate {
+                        width: 70%;
+                        height: 40px;
+                        padding: 0 10px;
+                    }
                 }
-                .submit {
-                    border: 1px solid #ccc;
-                    width: 200px;
-                    height: 46px;
-                    font-size: 14px;
-                    font-weight: 700;
-                    border-radius: 50px;
-                    &:hover {
-                        color: #fff;
+            }
+            .affiliateinquiry_text_two {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                .question_wrap {
+                    margin-top: 3%;
+                    .title {
+                        margin-bottom: 10px;
+                    }
+                    .question {
+                        width: 100%;
+                        height: 280px;
+                        border: none;
+                        resize: none;
+                    }
+                }
+                .checkbox_btn_wrap {
+                    margin-top: 2%;
+                    display: flex;
+                    justify-content: space-between;
+                    .container {
+                        display: block;
+                        position: relative;
+                        padding-left: 35px;
+                        margin-bottom: 12px;
+                        cursor: pointer;
+                        font-size: 18px;
+                    }  
+                    /* Hide the browser's default checkbox */
+                    .container input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }  
+                    /* Create a custom checkbox */
+                    .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 25px;
+                        width: 25px;
+                        background-color: #eee;
+                    }  
+                    /* On mouse-over, add a grey background color */
+                    .container:hover input ~ .checkmark {
+                        background-color: #ccc;
+                    }
+                    /* When the checkbox is checked, add a "red" background */
+                    .container input:checked ~ .checkmark {
                         background-color: #fdb53d;
-                        transition: 0.5s all ease;
+                    }
+                    /* Create the checkmark/indicator (hidden when not checked) */
+                    .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }  
+                    /* Show the checkmark when checked */
+                    .container input:checked ~ .checkmark:after {
+                        display: block;
+                    }
+                    /* Style the checkmark/indicator */
+                    .container .checkmark:after {
+                        left: 9px;
+                        top: 5px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid white;
+                        border-width: 0 3px 3px 0;
+                        transform: rotate(45deg);
+                    }
+                    .submit {
+                        border: 1px solid #ccc;
+                        width: 200px;
+                        height: 46px;
+                        font-size: 14px;
+                        font-weight: 700;
+                        border-radius: 50px;
+                        &:hover {
+                            color: #fff;
+                            background-color: #fdb53d;
+                            transition: 0.5s all ease;
+                        }
                     }
                 }
             }
@@ -175,7 +187,7 @@
 @include tablet {
     .affiliateinquiry_wrap {
         .form {
-            width: 70%;
+            width: 90% !important;
             height: 80%;
             padding: 50px;
             display: flex;
@@ -186,55 +198,60 @@
 }
 
 @include mobile {
-    .affiliateinquiry_wrap {
-        .affiliateinquiry_title_wrap {
-            .desc {
-                width: 80%;
-                line-height: 1.4;
-            }
-        }
-        .form {
-            width: 80%;
-            height: 100%;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            background-color: #fef5f0;
-            .name_wrap {
-                margin-top: 5%;                
-                .name {
-                    width: 100% !important;
+    .affiliateinquiry_section {
+        padding-top: 25%;
+        height: 100%;
+        .affiliateinquiry_wrap {
+            .affiliateinquiry_title_wrap {
+                .desc {
+                    width: 80%;
+                    line-height: 1.4;
                 }
             }
-            .tel_wrap {
-                .tel {
-                    width: 32% !important;
-                    &:last-child {
-                        margin-right: 0;
+            .form {
+                width: 80%;
+                height: 100%;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                background-color: #fef5f0;
+                .name_wrap {
+                    margin-top: 5%;                
+                    .name {
+                        width: 100% !important;
+                    }
+                }
+                .tel_wrap {
+                    .tel {
+                        width: 32% !important;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                .hopearea_wrap {
+                    .hopearea {
+                        width: 100% !important;
+                    }
+                }
+                .estimate_wrap {
+                    .estimate {
+                        width: 100% !important;
                     }
                 }
             }
-            .hopearea_wrap {
-                .hopearea {
-                    width: 100% !important;
-                }
-            }
-            .estimate_wrap {
-                .estimate {
-                    width: 100% !important;
-                }
-            }
-        }
-        .affiliateinquiry_text_two {
-            .checkbox_btn_wrap {
-                display: flex;
-                flex-direction: column;
-                .submit {
-                    margin-top: 3%;
-                    width: 100% !important;
+            .affiliateinquiry_text_two {
+                .checkbox_btn_wrap {
+                    display: flex;
+                    flex-direction: column;
+                    .submit {
+                        margin-top: 3%;
+                        width: 100% !important;
+                    }
                 }
             }
         }
     }
+    
 }

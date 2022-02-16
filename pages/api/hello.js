@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import excuteQuery from '../../db';
+// import excuteQuery from '../../db';
 
 // export default function handler(req, res) {
 //   res.status(200).json({ name: 'John Doe' })

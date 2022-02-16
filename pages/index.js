@@ -1,15 +1,17 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.scss'
-import Script from 'next/script'
 import Affiliateinquiry from '../components/Affiliateinquiry'
 import Foundedcost from '../components/Foundedcost'
 import Serviceinfo from '../components/Serviceinfo'
 import Brand from '../components/Brand'
+import Menu_items from '../components/Menu_items'
+import axios from 'axios'
 
-export default function Home() {
+export default function Home({menuList}) {
+
+  console.log({menuList});
+
   return (
     <div className={styles.container}>
       <Head>
@@ -85,7 +87,9 @@ export default function Home() {
       <section className={styles.brand_section} id='brand_section'>
         <Brand/>
       </section>
-      <section id='menu_section'></section>
+      <section id='menu_section'>
+        <Menu_items menuList={menuList}/>
+      </section>
       <section id='serviceinfo_section'>
         <Serviceinfo/>
       </section>
@@ -99,4 +103,22 @@ export default function Home() {
       </section>
     </div>
   )
+}
+
+
+export async function getServerSideProps(context) {
+  const division = '';
+  const res = await fetch(`http://localhost:3000/api/employee/${division}`)
+  const data = await res.json();
+  console.log(data);
+  if (!data) {
+    return {
+      notFound: true,
+    }
+  }
+  return {
+    props: {
+      menuList: data,
+    }, // will be passed to the page component as props
+  }
 }
